@@ -151,7 +151,7 @@ label {
 
 .btn {
     -moz-user-select: none;
-    background: #1696e7 none repeat scroll 0 0;
+    background-color: var(--main-color);
     border: medium none;
     border-radius: 2px;
     color: #fff;
@@ -164,11 +164,27 @@ label {
     margin-bottom: 0;
     padding: 13px 25px;
     text-align: center;
+    border-radius: 50px;
     text-transform: uppercase;
     touch-action: manipulation;
-    transition: all 0.3s ease 0s;
+    transition: var(--transition);
     vertical-align: middle;
     white-space: nowrap;
+    padding: 15px 30px !important;
+}
+
+.btn:hover {
+    background-color: #000 !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+
+.btn i {
+    transition: var(--transition);
+}
+
+.btn:hover i {
+    margin-left: 10px;
 }
 
 /* scrollUp */
@@ -199,15 +215,55 @@ label {
 .top_sidebar nav ul li a {
     color: #fff;
     font-size: 18px;
+    display: block;
     font-weight: 500;
     transition: var(--transition);
-    padding: 20px;
+    padding: 15px 20px;
 }
 
-.top_sidebar nav ul li a:hover {
+.top_sidebar nav ul li:hover {
     background: #fff;
     color: var(--main-color);
-    border-radius: 5px 5px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.top_sidebar nav ul li.searchModal:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.top_sidebar nav ul li:hover a {
+    color: #000;
+}
+
+/* .submenu_nav ul li:hover>.child_menu {
+    opacity: 1;
+    visibility: visible;
+} */
+
+.submenu_nav {
+    width: 300px;
+    position: relative;
+}
+
+li.searchModal {
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.submenu_nav ul li a i {
+    transform: rotate(0) !important;
+}
+
+.submenu_area a {
+    display: inline-block !important;
+    color: #fff !important;
+}
+
+.top_sidebar nav ul li a i {
+    transform: rotate(90deg);
+    font-size: 10px;
 }
 
 .top_sidebar nav ul li:last-child {
@@ -217,10 +273,14 @@ label {
     margin-left: 20px;
 }
 
+.submenu_area a i {
+    transform: rotate(0) !important;
+    font-size: inherit !important;
+}
+
 .top_sidebar {
     display: flex;
     flex-direction: column;
-    gap: 25px;
     margin-right: 30px;
 }
 
@@ -254,17 +314,129 @@ div#searchModal .form-group button {
 div#searchModal .form-group input::placeholder {
     font: 1.2rem/3 sans-serif;
 }
+
 .header-top ul li a {
     font-weight: 600;
     transition: var(--transition);
     padding: 10px;
     border-radius: 5px;
 }
-.header-top ul li a:hover{
+
+.header-top ul li a:hover {
     background-color: #fff;
     color: var(--main-color);
 }
+
 .header-top ul li {
     font-size: 14px;
 }
+
+.submenu {
+    position: absolute;
+    padding: 30px 0;
+    background: #fff;
+    border-bottom: 5px solid var(--main-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    left: 0;
+    width: 100%;
+}
+
+.top_sidebar ul li {
+    transition: var(--transition);
+}
+
+.top_sidebar ul li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu_nav ul li a {
+    color: #000 !important;
+    padding: 8px 0 !important;
+    transition: var(--transition);
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.submenu_nav ul li a:hover {
+    color: var(--main-color) !important;
+}
+
+.submenu_nav ul li:last-child {
+    margin: 0 !important;
+}
+
+.submenu_area {
+    max-width: 600px;
+}
+
+
+h2.submenu_title {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.submenu_area p {
+    font-size: 18px;
+}
+
+
+
+.submenu_nav ul li .child_menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    align-items: center;
+    transition: var(--transition);
+    height: 200px;
+}
+
+.submenu_nav ul li:hover .child_menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu_nav ul li {
+    transition: var(--transition);
+}
+
+.submenu_nav ul li:hover {
+    color: var(--main-color);
+}
+
+.submenu_nav ul li .child_menu ul li a {
+    padding: 5px !important;
+    text-transform: capitalize;
+}
+
+.submenu_nav ul li .child_menu ul li {
+    width: 50%;
+    float: left;
+}
+
+
+.submenu_nav ul li .child_menu::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: #ddd;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.child_menu ul {
+    margin-left: 20px;
+}
+
 /* header end */
