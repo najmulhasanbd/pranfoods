@@ -9,6 +9,9 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -559,3 +562,77 @@ h2.submenu_title {
 }
 
 /* testioflife end */
+
+/* about start */
+
+.single_about img {
+    width: 40%;
+    height: auto;
+    padding: 2em 0.5em 2em;
+    -webkit-filter: grayscale(1) brightness(0.75);
+    filter: grayscale(1) brightness(0.75);
+    -webkit-transition: 0.3s all linear;
+    transition: var(--transition);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+.single_about:hover img {
+    transform: scale(1);
+    color: var(--main-color);
+    -webkit-filter: grayscale(0) brightness(1);
+    filter: grayscale(0) brightness(1);
+    opacity: 1;
+}
+
+.single_about {
+    position: relative;
+    transition: var(--transition);
+}
+
+.single_about::after {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    background: red;
+    width: 100%;
+    height: 10px;
+    left: 0;
+    border-radius: 0 0 6px 6px;
+}
+
+.single_about h4 {
+    transition: var(--transition);
+    font-size: 18px;
+    font-weight: 600;
+    transform: scale(1);
+}
+
+.single_about:hover h4 {
+    color: var(--main-color);
+    transform: scale(1.2);
+}
+
+
+.about-area h2 span {
+    font-size: 40px;
+    color: #646464;
+    position: relative;
+  }
+  .about-area h2 {
+    padding: 40px 0;
+    padding-top: 100px;
+  }
+  .about-area h2 span::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 100%;
+    background: red;
+    width: 50%;
+    height: 5px;
+    transform: translate(-50%);
+    border-radius: 10px;
+  }
+/* about end */
