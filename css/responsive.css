@@ -26,6 +26,10 @@
     video {
         height: auto !important;
     }
+
+    .product_brand.slick-slider .slick-slide {
+        padding: 0 10px;
+    }
 }
 
 
@@ -49,6 +53,14 @@
 
     .information-area .container {
         gap: 20px !important;
+    }
+
+    .about-area h2 {
+        padding: 40px 0;
+    }
+
+    .product_brand.slick-slider .slick-slide {
+        padding: 0 10px;
     }
 }
 
@@ -76,6 +88,19 @@
 
     .information-area .container {
         gap: 20px !important;
+    }
+
+    .about-area h2 {
+        padding: 40px 0;
+    }
+
+    .product_brand.slick-slider .slick-slide {
+        padding: 0 5px;
+    }
+
+    section.information-area.py-5 {
+        padding: 25px 0 !important;
+        padding-bottom: 30px !important;
     }
 }
 

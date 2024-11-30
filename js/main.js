@@ -1,6 +1,52 @@
 (function ($) {
     "use strict";
 
+    //blog event
+    $(document).ready(function () {
+        $('.event_active').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 1,
+            fade:true,
+            slidesToScroll: 1,
+        });
+    });
+    
+    //product brand
+    $(document).ready(function () {
+        $('.product_brand').slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            centerMode: true, // Enables centering of the active slide
+            centerPadding: '0px', // Adjust the padding around the center slide
+            draggable: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        centerMode: true,
+                    }
+                }
+            ]
+        });
+    });
+    
+
+
+
+
+
+
 
     // scrollToTop
     $.scrollUp({
