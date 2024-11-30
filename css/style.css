@@ -216,6 +216,51 @@ span.section_title {
     color: #646464;
 }
 
+.page-banner::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000021;
+}
+
+.page-banner-content h2 {
+    position: relative;
+    padding-left: 30px;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.page-banner-content h2::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    height: 60px;
+    width: 5px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.page-banner-content p {
+    font-size: 22px;
+    margin-top: 35px;
+    color: white;
+}
+
+.page-banner {
+    position: relative;
+}
+
+.page-banner-content {
+    position: absolute;
+    top: 100px;
+    max-width: 700px;
+    z-index: 9;
+}
+
 /* header start */
 .header-area {
     background-color: var(--main-color);
@@ -346,13 +391,14 @@ div#mobilesearchModal .form-group input::placeholder {
     font-size: 14px;
 }
 
-.submenu {
+.top_sidebar ul li .submenu {
     position: absolute;
     padding: 30px 0;
     background: #fff;
     border-bottom: 5px solid var(--main-color);
     opacity: 0;
     visibility: hidden;
+    z-index: 999999999999999;
     transition: var(--transition);
     left: 0;
     width: 100%;
@@ -648,20 +694,23 @@ h2.submenu_title {
 .single-blog h2 {
     color: var(--main-color);
 }
+
 .event_content {
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.event_content a{
+
+.event_content a {
     color: var(--main-color);
     font-size: 18px;
 }
+
 .event_content a.btn {
     width: max-content;
     color: #fff;
-    font-size:small;
+    font-size: small;
 }
 
 /* blog end */
@@ -708,6 +757,140 @@ h2.submenu_title {
 }
 
 /* brand product */
+
+/* about page */
+main.main-area {
+    background: #F2F2F2;
+}
+
+.about-content p {
+    color: #000;
+}
+
+.about-content p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about_card_image {
+    overflow: hidden;
+    width: 50%;
+}
+
+.single_about_card:hover .about_card_image img {
+    transform: scale(1.2);
+}
+
+.about_card_content {
+    width: 50%;
+    position: relative;
+    padding: 20px;
+    padding-left: 25px;
+    z-index: 9;
+}
+
+.single_about_card {
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.about_card_image img {
+    border-radius: 5px 0 0 5px;
+    transition: var(--transition);
+}
+
+.about_card_content::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 20px;
+    top: 0;
+    height: 100%;
+    left: 0;
+    transform: skew(-5deg);
+    margin-left: -8px;
+}
+
+.about_card_content.single_about_card_revarge::after {
+    left: 100%;
+    margin-left: -10px;
+    transform: skewX(5deg);
+}
+
+.about_card_content h5 a {
+    position: relative;
+    font-weight: 600;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.about_card_content h5 a::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: red;
+    transition: var(--transition);
+    border-radius: 10px;
+}
+
+.single_about_card:hover .about_card_content h5 a::after {
+    width: 100%;
+}
+
+.about_card_content a {
+    color: var(--main-color);
+    margin-top: 13px;
+    display: block;
+    font-weight: 600;
+}
+
+.about_card_content a i {
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.single_about_card:hover .about_card_content a i {
+    opacity: 1;
+    visibility: visible;
+    padding-left: 10px;
+}
+
+.about_card_image.single_about_card_revarge {
+    width: 50%;
+}
+
+.about_card_content.single_about_card_revarge {
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.about_card_content.single_about_card_revarge .text-end a {
+    padding-right: 15px;
+}
+
+.about_card_content p {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* about page */
 
 /* footer start */
 .social_share {

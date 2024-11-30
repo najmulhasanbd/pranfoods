@@ -102,6 +102,51 @@
         padding: 25px 0 !important;
         padding-bottom: 30px !important;
     }
+
+    .page-banner-content h2 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .page-banner-content {
+        top: 20px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .page-banner-content p {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .page-banner-content h2 {
+        padding-left: 20px;
+    }
+
+    .about_card_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .about_card_content {
+        width: 100%;
+    }
+
+    .single_about_card {
+        display: block;
+    }
+
+    .about_card_content::after {
+        width: 0;
+    }
+
+    .about_card_image.single_about_card_revarge {
+        width: 100%;
+    }
+
+    .about_card_content.single_about_card_revarge {
+        width: 100%;
+    }
 }
 
 /* Large Mobile :480px. */
@@ -109,5 +154,6 @@
     .container {
         width: 450px
     }
+
 
 }
