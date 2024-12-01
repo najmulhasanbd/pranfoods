@@ -147,6 +147,12 @@
     .about_card_content.single_about_card_revarge {
         width: 100%;
     }
+    .page-banner-content_brand h2 {
+        font-size: 150%;
+    }
+    .page-banner-content_brand p {
+        font-size: 100%;
+    }
 }
 
 /* Large Mobile :480px. */
