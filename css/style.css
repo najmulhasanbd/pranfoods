@@ -1009,6 +1009,7 @@ img.brand_banner {
     border-radius: 5px;
     background: transparent;
 }
+
 .product_content h2 {
     font-size: 40px;
 }
@@ -1019,6 +1020,37 @@ img.brand_banner {
 }
 
 /* brand page */
+
+/* event start */
+.listing--page--date .datetime {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.listing--page--title a {
+    color: #222;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 10px 0;
+    display: block;
+}
+
+.listing--page--content {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.single_event {
+    transition: var(--transition);
+}
+
+.single_event:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* event end */
 
 /* footer start */
 .social_share {
