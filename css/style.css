@@ -989,6 +989,35 @@ img.brand_banner {
     color: var(--main-color);
 }
 
+.product_show.product_slid_active .slick-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.product_show.product_slid_active .slick-dots li button {
+    text-indent: -9999px;
+    border: 1px solid var(--main-color);
+    height: 10px;
+    border-radius: 50%;
+    transition: var(--transition);
+    background: var(--main-color);
+}
+
+.product_show.product_slid_active .slick-dots li.slick-active button {
+    width: 30px;
+    border-radius: 5px;
+    background: transparent;
+}
+.product_content h2 {
+    font-size: 40px;
+}
+
+.product_content p {
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
 /* brand page */
 
 /* footer start */

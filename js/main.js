@@ -14,6 +14,18 @@
             slidesToScroll: 1,
         });
     });
+    //product slide
+    $(document).ready(function () {
+        $('.product_slid_active').slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    });
     
     //product brand
     $(document).ready(function () {
