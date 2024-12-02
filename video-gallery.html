@@ -8,34 +8,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <style>
-        .select2-container .select2-selection--single {
-            height: 50px;
-        }
-
-        .select2-container--default .select2-selection--single .select2-selection__arrow {
-            top: 12px;
-        }
-
-        .select2-container .select2-selection--single .select2-selection__rendered {
-            padding-top: 10px;
-        }
-
-        .platform-content input,
-        .platform-content select,
-        .platform-content textarea {
-            padding: 12px;
-            border: 1px solid #aaaaaa;
-        }
-
-        .platform-content input::placeholder,
-        .platform-content textarea::placeholder {
-            text-transform: capitalize;
-        }
-    </style>
 </head>
 
 <body>
@@ -411,7 +386,7 @@
         <ul class="d-flex align-items-center gap-3">
             <li><a href="" class="text-white fw-semibold">Home <i class="fa fa-play" style="font-size: 10px;"></i></a>
             </li>
-            <li class="text-white">Career</li>
+            <li class="text-white">Video Gallery</li>
         </ul>
     </div>
     <!-- breadcrumb endstart -->
@@ -421,7 +396,7 @@
         <img src="images/page-banner/about.jpg" class="w-100" alt="">
         <div class="container">
             <div class="page-banner-content">
-                <h2>Career</h2>
+                <h2>Video Gallery</h2>
                 <p> is the largest food-beverage company in Bangladesh and admired by millions of people
                     globally. Know our story and who we are.</p>
             </div>
@@ -433,68 +408,50 @@
     <!-- about content -->
     <main class="main-area py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-md-12">
-                    <div class="platform-content">
-                        <h2 class="page_title"><span>Find your dream job</span></h2>
-
-
-                        <div class="social__media_job mt-5">
-                            <div class="row g-3">
-                                <div class="col-12 col-md-6">
-                                    <div class="single_job card text-center p-3">
-                                        <a href="">
-                                            <img src="images/career/facebook.gif" alt="">
-                                            <h4>connect with facebook</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure dolor at culpa modi accusantium quod dolorum eos, nostrum maxime ex! Sequi, velit. Magni voluptatum quaerat asperiores natus at expedita.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="single_job card text-center p-3">
-                                        <a href="">
-                                            <img src="images/career/linkedin.gif" alt="">
-                                            <h4>connect with linkedin</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure dolor at culpa modi accusantium quod dolorum eos, nostrum maxime ex! Sequi, velit. Magni voluptatum quaerat asperiores natus at expedita.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="submit_form mt-5" style="max-width: 500px;margin: auto;">
-                            <h2 class="text-center text-uppercase fw-bold">build your career with us</h2>
-                            <form action="" method="post">
-                                <div class="form-group mt-3">
-                                    <label for=""><b>Name</b></label>
-                                    <input type="text" name="name" class="form-control" placeholder="enter Name">
-                                </div>
-                                <div class="form-group mt-3">
-                                    <label for=""><b>Email</b></label>
-                                    <input type="text" name="name" class="form-control" placeholder="enter Name">
-                                </div>
-                                <div class="form-group mt-3">
-                                    <label for=""><b>Phone</b></label>
-                                    <input type="text" name="name" class="form-control" placeholder="enter Name">
-                                </div>
-                                <div class="form-group mt-3">
-                                    <label for=""><b>Career</b></label>
-                                    <select name="" id="" class="form-control">
-                                        <option value="">Select Career</option>
-                                        <option value="">Job one</option>
-                                        <option value="">Job one</option>
-                                        <option value="">Job one</option>
-                                    </select>
-                                </div>
-                                <div class="form-group mt-3">
-                                    <label for=""><b>Upload CV/Resume</b></label>
-                                    <input type="file" class="form-control">
-                                </div>
-                                <button type="submit" class="btn mt-3">Submit</button>
-                            </form>
-                        </div>
-
+            <div class="media-content">
+                <h2 class="page_title"><span>video gallery </span></h2>
+            </div>
+            <div class="row g-3 mt-5">               
+                <div class="col-md-4">
+                    <div class="single_photo_gallery">
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=ZVx6_ZHAab0" data-caption="Watch Video">
+                            <img src="images/photo/1.jpg" alt="Video Thumbnail">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single_photo_gallery">
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=ZVx6_ZHAab0" data-caption="Watch Video">
+                            <img src="images/photo/1.jpg" alt="Video Thumbnail">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single_photo_gallery">
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=ZVx6_ZHAab0" data-caption="Watch Video">
+                            <img src="images/photo/1.jpg" alt="Video Thumbnail">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single_photo_gallery">
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=ZVx6_ZHAab0" data-caption="Watch Video">
+                            <img src="images/photo/1.jpg" alt="Video Thumbnail">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single_photo_gallery">
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=ZVx6_ZHAab0" data-caption="Watch Video">
+                            <img src="images/photo/1.jpg" alt="Video Thumbnail">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single_photo_gallery">
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=ZVx6_ZHAab0" data-caption="Watch Video">
+                            <img src="images/photo/1.jpg" alt="Video Thumbnail">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -556,7 +513,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.umd.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/main.js"></script>
     <script>
@@ -566,13 +523,13 @@
             link.download = fileName;
             link.click();
         }
-
-        //select2
-        $(document).ready(function () {
-            $('.js-example-basic-single').select2();
-        });
     </script>
-
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        })
+    </script>
 </body>
 
 </html>
