@@ -21,7 +21,7 @@ body {
 }
 
 :root {
-    --main-color: #FF0001;
+    --main-color: #E2127E;
     --transition: all .3s ease-in-out;
 }
 
@@ -42,6 +42,7 @@ a,
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
+    list-style: none;
 }
 
 a:focus,
@@ -302,6 +303,17 @@ span.section_title {
     background-color: var(--main-color);
 }
 
+.logo {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .top_sidebar nav ul li a {
     color: #fff;
     font-size: 18px;
@@ -372,7 +384,6 @@ li.mobilesearchModal {
 .top_sidebar {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
     gap: 10px;
 }
 
@@ -478,6 +489,10 @@ h2.submenu_title {
 }
 
 .submenu_area p {
+    font-size: 18px;
+}
+
+section.information-area a {
     font-size: 18px;
 }
 
@@ -653,8 +668,6 @@ h2.submenu_title {
 /* about start */
 
 .single_about img {
-    width: 40%;
-    height: auto;
     padding: 2em 0.5em 2em;
     -webkit-filter: grayscale(1) brightness(0.75);
     filter: grayscale(1) brightness(0.75);
@@ -682,7 +695,7 @@ h2.submenu_title {
     position: absolute;
     bottom: 0;
     content: '';
-    background: red;
+    background: var(--main-color);
     width: 100%;
     height: 10px;
     left: 0;
@@ -718,7 +731,7 @@ h2.submenu_title {
     content: '';
     left: 50%;
     top: 100%;
-    background: red;
+    background: var(--main-color);
     width: 50%;
     height: 5px;
     transform: translate(-50%);
@@ -1133,6 +1146,41 @@ img.brand_banner {
 
 /* gallery end */
 
+/* brouchure start */
+.brouchere-thumbnail {
+    overflow: hidden;
+    transition: var(--transition);
+    transform: scale(.8);
+}
+
+.brouchere-thumbnail img {
+    width: 100%;
+    transition: var(--transition);
+}
+
+
+a.single-brouchure h3 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 25px;
+    transition: var(--transition);
+}
+
+a.single-brouchure {
+    overflow: hidden;
+}
+
+a.single-brouchure:hover h3 {
+    color: var(--main-color);
+    transform: scale(1.2) skewX(3deg);
+}
+
+a.single-brouchure:hover img {
+    transform: scale(1.2) skew(3deg, 5deg);
+}
+
+/* brouchure end */
+
 /* media start */
 .single_media img {
     width: 100%;
@@ -1227,3 +1275,32 @@ img.brand_banner {
 }
 
 /* footer end */
+
+.brand_circle .slick-slide {
+    margin: 0 5px;
+}
+
+.single_brand_view {
+    border: 5px solid #ddd;
+    padding: 10px;
+    position: relative;
+}
+
+.single_brand_view::after {
+    position: absolute;
+    content: '';
+    background: #dddddd87;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.brand_circle .slick-slide.slick-current.slick-active.slick-center {
+    background: var(--main-color);
+    /* transform: scale(1.5); */
+}
+
+.slick-slide.slick-current.slick-active.slick-center .single_brand_view::after {
+    background-color: transparent;
+}

@@ -8,9 +8,33 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .select2-container .select2-selection--single {
+            height: 50px;
+        }
 
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            top: 12px;
+        }
+
+        .select2-container .select2-selection--single .select2-selection__rendered {
+            padding-top: 10px;
+        }
+
+        .platform-content input,
+        .platform-content textarea {
+            padding: 12px;
+            border: 1px solid #aaaaaa;
+        }
+
+        .platform-content input::placeholder,
+        .platform-content textarea::placeholder {
+            text-transform: capitalize;
+        }
+    </style>
 </head>
 
 <body>
@@ -411,17 +435,17 @@
         <ul class="d-flex align-items-center gap-3">
             <li><a href="" class="text-white fw-semibold">Home <i class="fa fa-play" style="font-size: 10px;"></i></a>
             </li>
-            <li class="text-white">Media</li>
+            <li class="text-white">Brochure</li>
         </ul>
     </div>
     <!-- breadcrumb endstart -->
 
     <!-- page banner -->
     <div class="page-banner">
-        <img src="images/page-banner/about.jpg" loading="lazy" class="w-100" alt="">
+        <img src="images/page-banner/about.jpg" class="w-100" alt="" loading="lazy">
         <div class="container">
             <div class="page-banner-content">
-                <h2>Media</h2>
+                <h2>Brochure</h2>
                 <p> is the largest food-beverage company in Bangladesh and admired by millions of people
                     globally. Know our story and who we are.</p>
             </div>
@@ -433,42 +457,96 @@
     <!-- about content -->
     <main class="main-area py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="media-content">
-                        <h2 class="page_title"><span>media </span></h2>
-                        <p class="py-5">Elevate your business with PRAN Group's vast network and global reach. Reach out
-                            now to explore new horizons in the realm of quality products.</p>
-                    </div>
-                </div>
+            <div class="brouchure-content">
+                <h2 class="page_title"><span>Product Brochures list</span></h2>
             </div>
-            <div class="row g-3">
+
+            <div class="row g-3 mt-5">
                 <div class="col-lg-4 col-md-6">
-                    <div class="single_media card">
-                        <a href="events.html" class="d-block">
-                            <img src="images/event/event.jpg" class="rounded" alt="" loading="lazy">
-                        </a>
-                    </div>
+                    <a href="https://www.pranfoods.net/sites/default/files/2023-02/2022-02-24_juice_drink_catalogue.pdf"
+                        class="single-brouchure card d-block text-center" target="_blank">
+                        <div class="brouchere-thumbnail">
+                            <img src="images/brouchure/1.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3> Frozen Frozen</h3>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="single_media card">
-                        <a href="news.html" class="d-block">
-                            <img src="images/event/latest.jpg" class="rounded" alt="" loading="lazy">
-                        </a>
-                    </div>
+                    <a href="https://www.pranfoods.net/sites/default/files/2023-02/2022-02-24_juice_drink_catalogue.pdf"
+                        class="single-brouchure card d-block text-center" target="_blank">
+                        <div class="brouchere-thumbnail">
+                            <img src="images/brouchure/2.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3> Frozen Frozen</h3>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="single_media card">
-                        <a href="gallery.html" class="d-block">
-                            <img src="images/event/gallery.png" class="rounded" alt="" loading="lazy">
-                        </a>
-                    </div>
+                    <a href="https://www.pranfoods.net/sites/default/files/2023-02/2022-02-24_juice_drink_catalogue.pdf"
+                        class="single-brouchure card d-block text-center" target="_blank">
+                        <div class="brouchere-thumbnail">
+                            <img src="images/brouchure/3.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3> Frozen Frozen</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.pranfoods.net/sites/default/files/2023-02/2022-02-24_juice_drink_catalogue.pdf"
+                        class="single-brouchure card d-block text-center" target="_blank">
+                        <div class="brouchere-thumbnail">
+                            <img src="images/brouchure/4.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3> Frozen Frozen</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.pranfoods.net/sites/default/files/2023-02/2022-02-24_juice_drink_catalogue.pdf"
+                        class="single-brouchure card d-block text-center" target="_blank">
+                        <div class="brouchere-thumbnail">
+                            <img src="images/brouchure/5.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3> Frozen Frozen</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.pranfoods.net/sites/default/files/2023-02/2022-02-24_juice_drink_catalogue.pdf"
+                        class="single-brouchure card d-block text-center" target="_blank">
+                        <div class="brouchere-thumbnail">
+                            <img src="images/brouchure/6.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3> Frozen Frozen</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.pranfoods.net/sites/default/files/2023-02/2022-02-24_juice_drink_catalogue.pdf"
+                        class="single-brouchure card d-block text-center" target="_blank">
+                        <div class="brouchere-thumbnail">
+                            <img src="images/brouchure/7.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3> Frozen Frozen</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.pranfoods.net/sites/default/files/2023-02/2022-02-24_juice_drink_catalogue.pdf"
+                        class="single-brouchure card d-block text-center" target="_blank">
+                        <div class="brouchere-thumbnail">
+                            <img src="images/brouchure/8.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3> Frozen Frozen</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.pranfoods.net/sites/default/files/2023-02/2022-02-24_juice_drink_catalogue.pdf"
+                        class="single-brouchure card d-block text-center" target="_blank">
+                        <div class="brouchere-thumbnail">
+                            <img src="images/brouchure/9.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3> Frozen Frozen</h3>
+                    </a>
                 </div>
             </div>
         </div>
     </main>
     <!-- about content -->
-
 
     <!-- footer start -->
     <footer>
@@ -491,7 +569,6 @@
                         <div class="single-footer">
                             <img src="images/logo.png" style="width: 150px;" alt="" loading="lazy">
                             <h6><b>Corporate Headquarters:</b></h6>
-                            <!-- <p> Center</p> -->
                             <p>Dhaka, Bangladesh</p>
                             <a href="tel:+880-2222281792">Phone: +880-11111111</a>
                             <a href="tel:+8802-41081851-54"> 02-22222-54</a>
@@ -523,6 +600,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/main.js"></script>
     <script>
@@ -532,6 +610,11 @@
             link.download = fileName;
             link.click();
         }
+
+        //select2
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
     </script>
 
 </body>

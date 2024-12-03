@@ -17,20 +17,45 @@
     <!-- header start -->
     <header>
         <section class="header-area">
-            <div class="container-fluid p-0">
+            <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center relative">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="images/logo.jpg" style="max-width: 100px;" alt="">
+                            <img src="images/logo.png" style="max-width: 200px;" alt="" loading="lazy">
                         </a>
                     </div>
                     <div class="top_sidebar">
                         <div class="header-top">
                             <ul class="d-flex justify-content-end gap-5">
                                 <li><a href=""><i class="fa fa-circle-down"></i> Product Brouchures</a></li>
-                                <li><i class="fa-solid fa-earth-americas"></i> You are no our Global Site <a
-                                        href="">Change
+                                <li data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fa-solid fa-earth-americas"></i> You are no our Global Site <a
+                                        href="javascript:void(0)">Change
                                         Country</a></li>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Our Global
+                                                        Address</b></h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <a href="" title="global.com" class="btn">Global <i
+                                                        class="fa fa-play"></i></a>
+                                                <a href="" title="global.com" class="btn">Dubai <i
+                                                        class="fa fa-play"></i></a>
+                                                <a href="" title="global.com" class="btn">Bangladesh <i
+                                                        class="fa fa-play"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <li>
                                     <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                                     <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
@@ -155,7 +180,7 @@
                                         </div>
                                     </a></li>
                                 <li><a href="">Global Reach</a></li>
-                                <li><a href="">Media</a></li>
+                                <li><a href="">Media </a></li>
                                 <li><a href="">Suppliers</a></li>
                                 <li><a href="">Career</a></li>
                                 <li><a href="">Contact US</a></li>
@@ -362,7 +387,9 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
+
                                         <li><a href="">Suppliers</a></li>
                                         <li><a href="">Career</a></li>
                                         <li><a href="">Contact US</a></li>
@@ -390,8 +417,8 @@
 
     <!-- page banner -->
     <div class="page-banner_brand">
-        <img src="images/page-banner/about.jpg" class="w-100" alt="">
-        <img src="images/page-banner/brand--border.png" class="brand_banner" alt="">
+        <img src="images/page-banner/about.jpg" class="w-100" alt="" loading="lazy">
+        <img src="images/page-banner/brand--border.png" class="brand_banner" alt="" loading="lazy">
         <div class="container">
             <div class="page-banner-content_brand">
                 <h2> Foods: Quality and Taste in Every Bite</h2>
@@ -479,7 +506,7 @@
                                     <div class="brand_product card text-center p-3">
                                         <a href="brand_product.html">
                                             <img src="https://www.foods.net/sites/default/files/2023-08/2-Bulldozer-Web-Logo-w-190x190-px.png"
-                                                loading="lazy" class="w-100" alt="">
+                                                loading="lazy" class="w-100" loading="lazy" alt="">
                                         </a>
                                         <h4>Bulldozer</h4>
                                         <a href="brand_product.html" class="btn">View More <i class="fa fa-play"></i> </a>
@@ -521,7 +548,7 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <div class="single-footer">
-                            <img src="images/logo.jpg" style="width: 150px;" alt="">
+                            <img src="images/logo.png" style="width: 150px;" alt="" loading="lazy">
                             <h6><b>Corporate Headquarters:</b></h6>
                             <!-- <p> Center</p> -->
                             <p>Dhaka, Bangladesh</p>
