@@ -232,7 +232,7 @@ h2.page_title span::before {
 
 /* scrollUp */
 #scrollUp {
-    background: #7DBA2F;
+    background: var(--main-color);
     height: 35px;
     width: 35px;
     right: 0;
@@ -274,7 +274,7 @@ span.section_title {
 .page-banner-content h2::after {
     position: absolute;
     content: '';
-    background: #fff;
+    background: var(--main-color);
     height: 60px;
     width: 5px;
     left: 0;
@@ -287,15 +287,30 @@ span.section_title {
     color: white;
 }
 
+.media-content span {
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 40px;
+    border-bottom: 5px solid;
+    border-radius: 50px;
+    padding: 0 20px;
+}
+
 .page-banner {
     position: relative;
 }
 
 .page-banner-content {
     position: absolute;
-    top: 100px;
+    top: 50%;
     max-width: 700px;
     z-index: 9;
+    transform: translateY(-50%);
+}
+
+.page-banner img {
+    height: 50vh;
 }
 
 /* header start */
@@ -411,7 +426,7 @@ div#mobilesearchModal .form-group input {
 
 div#searchModal .form-group button,
 div#mobilesearchModal .form-group button {
-    background: red;
+    background: var(--main-color);
     border: none;
     color: #fff;
     padding: 15px 25px;
@@ -579,7 +594,7 @@ section.information-area a {
 }
 
 .offcanvas-body.mobile_menu li a:hover {
-    color: red;
+    color: var(--main-color);
 }
 
 #mobile_brand .accordion-button:focus {
@@ -891,7 +906,7 @@ main.main-area {
     left: 0;
     width: 50%;
     height: 3px;
-    background: red;
+    background: var(--main-color);
     transition: var(--transition);
     border-radius: 10px;
 }

@@ -4,6 +4,10 @@
     .submenu_area {
         max-width: 400px;
     }
+
+    .top_sidebar nav ul li a {
+        padding: 10px 15px;
+    }
 }
 
 
@@ -11,6 +15,10 @@
 @media (min-width: 992px) and (max-width: 1200px) {
     .top_sidebar nav ul {
         margin-top: 15px;
+    }
+
+    h2.page_title {
+        font-size: 180%;
     }
 
     .top_sidebar nav ul li a {
@@ -30,6 +38,18 @@
     .product_brand.slick-slider .slick-slide {
         padding: 0 10px;
     }
+
+    h2.page_title span {
+        width: 100%;
+    }
+    .single_job h4 {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .single_job p {
+        font-size: 16px;
+    }
 }
 
 
@@ -37,6 +57,15 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .header-top ul {
         gap: 10px !important;
+    }
+
+    .page-banner img {
+        height: auto;
+    }
+
+    h2.page_title span {
+        width: 100%;
+        display: block;
     }
 
     .top_sidebar {
@@ -62,6 +91,19 @@
     .product_brand.slick-slider .slick-slide {
         padding: 0 10px;
     }
+
+    h2.page_title {
+        font-size: 150%;
+    }
+    .single_job h4 {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .single_job p {
+        font-size: 16px;
+    }
+
 }
 
 
@@ -71,6 +113,10 @@
     .header-top ul {
         display: block !important;
         text-align: center;
+    }
+
+    .page-banner-content {
+        margin-right: 50px;
     }
 
     .header-top ul li a:hover {
@@ -108,14 +154,9 @@
         font-weight: 500;
     }
 
-    .page-banner-content {
-        top: 20px;
-        max-width: 100%;
-        margin-right: 30px;
-    }
 
     .page-banner-content p {
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 16px;
     }
 
@@ -158,6 +199,32 @@
 
     h2.page_title.mobile_size {
         font-size: 150%;
+    }
+
+    h2.page_title {
+        font-size: 150%;
+    }
+
+    h2.page_title span {
+        width: 100%;
+        display: block;
+    }
+
+    .media-content span {
+        font-size: 25px;
+    }
+
+    .page-banner img {
+        height: auto;
+    }
+
+    .single_job h4 {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .single_job p {
+        font-size: 16px;
     }
 }
 
