@@ -206,6 +206,11 @@ h2.page_title span {
     color: var(--main-color);
 }
 
+.breadcrumb-area ul li i {
+    color: var(--main-color);
+    margin-left: 10px;
+}
+
 h2.page_title span::after {
     position: absolute;
     content: '';
@@ -217,17 +222,10 @@ h2.page_title span::after {
     border-radius: 50px;
 }
 
-h2.page_title span::before {
-    position: absolute;
-    content: '';
-    background: green;
-    width: 20px;
-    height: 20px;
-    top: 87%;
-    border-radius: 100%;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 9;
+.breadcrumb-area ul li,
+.breadcrumb-area ul li a {
+    color: var(--main-color);
+    font-weight: bold;
 }
 
 /* scrollUp */
@@ -281,10 +279,20 @@ span.section_title {
     border-radius: 10px;
 }
 
-.page-banner-content p {
-    font-size: 22px;
-    margin-top: 35px;
-    color: white;
+ul.mobile_top_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+ul.mobile_top_header li {
+    display: flex;
+    gap: 12px;
+}
+
+ul.mobile_top_header li a,
+ul.mobile_top_header li {
+    color: #fff;
 }
 
 .media-content span {
@@ -310,7 +318,7 @@ span.section_title {
 }
 
 .page-banner img {
-    height: 50vh;
+    height: 300px;
 }
 
 /* header start */
@@ -329,13 +337,34 @@ span.section_title {
     padding: 10px;
 }
 
+.search_icon {
+    padding: 5px 18px !important;
+    background: var(--main-color);
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: var(--transition);
+}
+
+.search_icon i {
+    font-size: 15px !important;
+}
+
+.search_icon:hover {
+    background: #fff;
+}
+
+.search_icon:hover i {
+    color: var(--main-color);
+}
+
 .top_sidebar nav ul li a {
     color: #fff;
     font-size: 18px;
     display: block;
     font-weight: 500;
     transition: var(--transition);
-    padding: 10px 20px;
+    padding: 10px;
+    line-height: 1;
 }
 
 .top_sidebar nav ul li:hover {
@@ -410,7 +439,6 @@ li.mobilesearchModal {
 li.searchModal,
 li.mobilesearchModal {
     color: #fff;
-    margin-left: 15px;
     cursor: pointer;
 }
 
@@ -770,6 +798,8 @@ section.information-area a {
 .event_content a {
     color: var(--main-color);
     font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 .event_content a.btn {
@@ -879,18 +909,13 @@ main.main-area {
     content: '';
     background: #fff;
     width: 20px;
-    top: 0;
+    top: 1px;
     height: 100%;
     left: 0;
-    transform: skew(-5deg);
+    transform: skew(-3deg);
     margin-left: -8px;
 }
 
-.about_card_content.single_about_card_revarge::after {
-    left: 100%;
-    margin-left: -10px;
-    transform: skewX(5deg);
-}
 
 .about_card_content h5 a {
     position: relative;
@@ -936,15 +961,29 @@ main.main-area {
 
 .about_card_image.single_about_card_revarge {
     width: 50%;
+    position: relative;
 }
 
 .about_card_content.single_about_card_revarge {
+    overflow: hidden;
+}
+
+.about_card_image.single_about_card_revarge::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 60px;
+    height: 101%;
+    left: -50px;
+    top: 0px;
+    transform: skewX(3deg);
+}
+
+/* .about_card_content.single_about_card_revarge {
     width: 50%;
     padding-left: 25px;
     padding-right: 8px;
-    /* padding-top: 0;
-    padding-bottom: 0; */
-}
+} */
 
 .about_card_content.single_about_card_revarge .text-end a {
     padding-right: 15px;
@@ -1281,12 +1320,36 @@ a.single-brouchure:hover img {
 .single-footer.usefull_links a {
     margin: 0;
     transition: var(--transition);
-    text-decoration: underline;
     margin-bottom: 5px;
 }
 
 .single-footer.usefull_links a:hover {
     color: var(--main-color);
+    margin-left: 10px;
+}
+
+.copyright {
+    background: var(--main-color);
+    padding: 15px;
+    color: #fff;
+}
+
+.copyright .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright a {
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.single-footer h5 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: var(--main-color);
+    border-bottom: ;
 }
 
 /* footer end */

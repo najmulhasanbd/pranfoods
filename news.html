@@ -17,21 +17,54 @@
     <!-- header start -->
     <header>
         <section class="header-area">
-            <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center relative">
+            <div class="container">
+                <ul class="mobile_top_header d-lg-none">
+                    <li><a href=""><i class="fa fa-circle-down"></i> Product Brouchures</a></li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-earth-americas"></i>
+                        You are no our
+                        Global Site<a href="javascript:void(0)" class="change_country"><b> &nbsp Change Country</b></a>
+                    </li>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Our Global
+                                            Address</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-wrap gap-2 justify-content-center">
+                                    <a href="" title="global.com" class="btn">Global <i class="fa fa-play"></i></a>
+                                    <a href="" title="global.com" class="btn">Dubai <i class="fa fa-play"></i></a>
+                                    <a href="" title="global.com" class="btn">Bangladesh <i class="fa fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center relative py-2">
                     <div class="logo">
                         <a href="index.html">
                             <img src="images/logo.png" style="max-width: 200px;" alt="" loading="lazy">
                         </a>
                     </div>
                     <div class="top_sidebar">
-                        <div class="header-top">
-                            <ul class="d-flex justify-content-end gap-5">
+                        <div class="header-top d-none d-lg-block">
+                            <ul class="d-flex justify-content-end gap-5 mt-3">
                                 <li><a href=""><i class="fa fa-circle-down"></i> Product Brouchures</a></li>
-                                <li data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                        class="fa-solid fa-earth-americas"></i> You are no our Global Site <a
-                                        href="javascript:void(0)">Change
-                                        Country</a></li>
+                                <li data-bs-toggle="modal" data-bs-target="#exampleModal"> <span
+                                        class="change_country"><i class="fa-solid fa-earth-americas"></i> You are no our
+                                        Global Site</span> <a href="javascript:void(0)">Change Country</a></li>
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1"
@@ -44,7 +77,7 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body">
+                                            <div class="modal-body d-flex flex-wrap gap-2 justify-content-center">
                                                 <a href="" title="global.com" class="btn">Global <i
                                                         class="fa fa-play"></i></a>
                                                 <a href="" title="global.com" class="btn">Dubai <i
@@ -65,7 +98,7 @@
                             </ul>
                         </div>
                         <nav>
-                            <ul class="d-flex d-none d-xl-flex">
+                            <ul class="d-flex d-none d-xl-flex justify-content-between">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About <i class="fa-solid fa-play"></i>
                                         <div class="submenu d-flex gap-5 align-items-center">
@@ -182,11 +215,9 @@
                                 <li><a href="">Global Reach</a></li>
                                 <li><a href="">Media </a></li>
                                 <li><a href="">Suppliers</a></li>
-                                <li><a href="">Career</a></li>
-                                <li><a href="">Contact US</a></li>
                                 <li><a href="">Our Platforms</a></li>
-                                <li data-bs-toggle="modal" class="searchModal" data-bs-target="#searchModal"><i
-                                        class="fa fa-search"></i>
+                                <li data-bs-toggle="modal" class="searchModal" data-bs-target="#searchModal"><a
+                                        class="search_icon" href="javascript:void(0)"><i class="fa fa-search"></i></a>
                                 </li>
 
                                 <!-- desktop search Modal -->
@@ -463,53 +494,79 @@
     </main>
     <!-- product details -->
 
-    <!-- footer start -->
-    <footer>
-        <div class="social_share d-flex flex-wrap align-items-center gap-5">
-            <div class="d-flex align-items-center">
-                <h6 class="text-white fs-5"><i class="fa-solid fa-square-share-nodes"></i>
-                    Connect with us</h6>
+
+        <!-- footer start -->
+        <footer>
+            <div class="social_share d-flex flex-wrap align-items-center gap-5">
+                <div class="d-flex align-items-center">
+                    <h6 class="text-white fs-5"><i class="fa-solid fa-square-share-nodes"></i>
+                        Connect with us</h6>
+                </div>
+                <ul class="d-flex gap-3">
+                    <li><a href="" class="text-white fs-4"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="" class="text-white fs-4"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="" class="text-white fs-4"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="" class="text-white fs-4"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
             </div>
-            <ul class="d-flex gap-3">
-                <li><a href="" class="text-white fs-4"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="" class="text-white fs-4"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="" class="text-white fs-4"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="" class="text-white fs-4"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-area py-5">
-            <div class="container">
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="single-footer">
-                            <img src="images/logo.png" style="width: 150px;" alt="" loading="lazy">
-                            <h6><b>Corporate Headquarters:</b></h6>
-                            <!-- <p> Center</p> -->
-                            <p>Dhaka, Bangladesh</p>
-                            <a href="tel:+880-2222281792">Phone: +880-11111111</a>
-                            <a href="tel:+8802-41081851-54"> 02-22222-54</a>
+    
+            <div class="footer-area pt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="single-footer">
+                                <img src="images/logo.png" style="width: 200px;" alt="" loading="lazy">
+    
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nobis porro dolorum
+                                    pariatur necessitatibus placeat a ea repellendus quisquam, aperiam ipsum provident
+                                    inventore vitae cupiditate, accusantium dolores, at nemo aliquam.</p>
+    
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="single-footer usefull_links">
-                            <h5><b>Important Links</b></h5>
-                            <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">Career</a></li>
-                                <li><a href="">Privacy Policy</a></li>
-                                <li><a href="">Terms & Conditions</a></li>
-                            </ul>
+                        <div class="col-lg-3 offset-lg-1">
+                            <div class="single-footer usefull_links">
+                                <h5><b>Important Links</b></h5>
+                                <ul>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Contact</a></li>
+                                    <li><a href="">Career</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-footer usefull_links">
+                                <h5><b>contact</b></h5>
+    
+                                <div class="d-flex align-items-center gap-2">
+                                    <p><i class="fa fa-phone"></i></p>
+                                    <p class="d-flex gap-2">
+                                        <a href="tel:+8801937563157">+8801937563157</a>
+                                        <a href="tel:+8801937563157">+8801937563157</a>
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <p><i class="fa fa-envelope"></i></p>
+                                    <p><a href="mailto:najmul@gmail.com">najmul@gmail.com</a></p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <p><i class="fa fa-home"></i></p>
+                                    <a href="https://maps.app.goo.gl/jpcmcujRNJQ9iNpf9" target="_blank">Dhaka</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row text-center">
-                    <p> <strong>&copy; Our Website. 2024</strong></p>
+                <div class="copyright mt-5">
+                   <div class="container">
+                    <span> <strong>&copy; Our Website. 2024</strong></span>
+                    <span> Developed by <a href="" target="_blank">Classic IT </a></span>
+                   </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- footer end -->
+        </footer>
+        <!-- footer end -->
 
 
     <script src="js/jquery.min.js"></script>

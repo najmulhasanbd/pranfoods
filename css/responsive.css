@@ -13,9 +13,6 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-    .top_sidebar nav ul {
-        margin-top: 15px;
-    }
 
     h2.page_title {
         font-size: 180%;
@@ -39,9 +36,6 @@
         padding: 0 10px;
     }
 
-    h2.page_title span {
-        width: 100%;
-    }
     .single_job h4 {
         font-weight: 500;
         font-size: 25px;
@@ -63,17 +57,14 @@
         height: auto;
     }
 
-    h2.page_title span {
-        width: 100%;
-        display: block;
+
+    .about_card_image {
+        display: flex;
+        align-items: center;
     }
 
-    .top_sidebar {
-        margin-right: 10px !important;
-    }
-
-    .top_sidebar nav ul {
-        margin-top: 15px;
+    .about_card_image img {
+        height: auto !important;
     }
 
     video {
@@ -95,6 +86,7 @@
     h2.page_title {
         font-size: 150%;
     }
+
     .single_job h4 {
         font-weight: 500;
         font-size: 25px;
@@ -103,6 +95,8 @@
     .single_job p {
         font-size: 16px;
     }
+
+
 
 }
 
@@ -205,10 +199,7 @@
         font-size: 150%;
     }
 
-    h2.page_title span {
-        width: 100%;
-        display: block;
-    }
+
 
     .media-content span {
         font-size: 25px;
@@ -225,6 +216,28 @@
 
     .single_job p {
         font-size: 16px;
+    }
+
+    section.information-area a {
+        font-size: 12px;
+        padding: 10px 20px !important;
+    }
+
+    ul.mobile_top_header {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about_card_image.single_about_card_revarge::after {
+        width: 0;
+        left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 420px) and (max-width: 500px) {
+    span.change_country {
+        display: block;
     }
 }
 
