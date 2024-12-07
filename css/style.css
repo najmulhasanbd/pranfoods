@@ -261,6 +261,7 @@ span.section_title {
     font-size: 50px;
     font-weight: 600;
     color: white;
+    text-transform: capitalize;
 }
 
 .page-banner-content h2::after {
