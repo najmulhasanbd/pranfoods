@@ -228,13 +228,17 @@ h2.page_title span::after {
     font-weight: bold;
 }
 
+ul.mobile_top_header li span {
+    display: none;
+}
+
 /* scrollUp */
 #scrollUp {
     background: var(--main-color);
     height: 35px;
     width: 35px;
     right: 0;
-    bottom: 0;
+    bottom: 54px;
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -249,16 +253,6 @@ h2.page_title span::after {
 
 span.section_title {
     color: #646464;
-}
-
-.page-banner::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #00000021;
 }
 
 .page-banner-content h2 {
@@ -305,21 +299,8 @@ ul.mobile_top_header li {
     padding: 0 20px;
 }
 
-.page-banner {
-    position: relative;
-}
 
-.page-banner-content {
-    position: absolute;
-    top: 50%;
-    max-width: 700px;
-    z-index: 9;
-    transform: translateY(-50%);
-}
 
-.page-banner img {
-    height: 300px;
-}
 
 /* header start */
 .header-area {
@@ -370,7 +351,7 @@ ul.mobile_top_header li {
 .top_sidebar nav ul li:hover {
     background: #fff;
     color: var(--main-color);
-    border-radius: 5px 5px 0 0;
+    border-radius: 3px;
 }
 
 .top_sidebar nav ul li.searchModal:hover {
@@ -482,124 +463,15 @@ div#mobilesearchModal .form-group input::placeholder {
     font-size: 14px;
 }
 
-.top_sidebar ul li .submenu {
-    position: absolute;
-    padding: 30px 0;
-    background: #fff;
-    border-bottom: 5px solid var(--main-color);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 999999999999999;
-    transition: var(--transition);
-    left: 0;
-    width: 100%;
-}
-
-.top_sidebar ul li {
-    transition: var(--transition);
-}
-
-.top_sidebar ul li:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-}
-
-.submenu_nav ul li a {
-    color: #000 !important;
-    padding: 8px 0 !important;
-    transition: var(--transition);
-    display: flex !important;
-    justify-content: space-between;
-}
-
-.submenu_nav ul li a:hover {
-    color: var(--main-color) !important;
-}
-
-.submenu_nav ul li:last-child {
-    margin: 0 !important;
-}
-
-.submenu_area {
-    max-width: 600px;
-}
-
-
-h2.submenu_title {
-    color: var(--main-color);
-    font-weight: 500;
-    font-size: 40px;
-}
-
-.submenu_area p {
-    font-size: 18px;
-}
-
-section.information-area a {
-    font-size: 18px;
-}
-
-.submenu_nav ul li .child_menu {
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    opacity: 0;
-    visibility: hidden;
-    align-items: center;
-    transition: var(--transition);
-    height: 200px;
-}
-
-.submenu_nav ul li:hover .child_menu {
-    opacity: 1;
-    visibility: visible;
-}
-
-.submenu_nav ul li {
-    transition: var(--transition);
-}
-
-.submenu_nav ul li:hover {
-    color: var(--main-color);
-}
-
-.submenu_nav ul li .child_menu ul li a {
-    padding: 5px !important;
-    text-transform: capitalize;
-}
-
-.submenu_nav ul li .child_menu ul li {
-    width: 50%;
-    float: left;
-}
-
-
-.submenu_nav ul li .child_menu::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    width: 5px;
-    height: 100%;
-    background: #ddd;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
-.child_menu ul {
-    margin-left: 20px;
-}
 
 /* mobile menu */
 
 .offcanvas-body.mobile_menu li a {
     color: #000000c2;
     padding: 5px 0;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 17px;
+    margin-bottom: 10px;
 }
 
 .offcanvas-body.mobile_menu li:last-child {
@@ -654,16 +526,6 @@ section.information-area a {
     box-shadow: none;
 }
 
-.accordion-header {
-    display: flex;
-    align-items: center;
-}
-
-.accordion-header .accordion-link {
-    flex: 1;
-    text-decoration: none;
-    color: inherit;
-}
 
 /* header end */
 
@@ -979,11 +841,6 @@ main.main-area {
     transform: skewX(3deg);
 }
 
-/* .about_card_content.single_about_card_revarge {
-    width: 50%;
-    padding-left: 25px;
-    padding-right: 8px;
-} */
 
 .about_card_content.single_about_card_revarge .text-end a {
     padding-right: 15px;
@@ -997,78 +854,68 @@ main.main-area {
 
 /* about page */
 
-/* brand page */
-.page-banner_brand {
+/* page banner */
+.page-banner {
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    background-attachment: fixed;
     position: relative;
+    display: flex;
+    z-index: 2;
+    align-items: center;
 }
 
-.page-banner-content_brand {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    left: 0;
-    text-align: center;
-    padding: 0 30px;
-    z-index: 1;
-    color: #fff;
-}
-
-.page-banner_brand::after {
+.page-banner::after {
     position: absolute;
     content: '';
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: #00000042;
+    background: #2125292e;
+    z-index: -1;
 }
 
-.page-banner-content_brand h2 {
-    font-weight: 500;
-    font-size: 300%;
-}
+/* page banner */
 
-.page-banner-content_brand p {
-    font-size: 120%;
-}
-
-img.brand_banner {
-    position: absolute;
-    left: 0;
+/* brand page */
+a.single_brand img {
     width: 100%;
-    z-index: 9;
-    bottom: 0;
+    height: 150px;
+    object-fit: cover;
+}
+
+section.information-area a {
+    font-size: 18px;
+}
+
+.single_brand {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.single_brand h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 0;
+    padding: 10px 0;
+    transition: var(--transition);
+}
+
+
+.single_brand:hover h4 {
+    transform: scale(1.1) skew(-5deg, -5deg);
 }
 
 .accordion-body.brands_sidebar {
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
-}
-
-.accordion-body.brands_sidebar .nav-link {
-    transition: var(--transition);
-    color: #000;
-    margin-bottom: 5px;
-    padding: 5px;
-}
-
-.accordion-body.brands_sidebar .nav-link.active {
-    background-color: var(--main-color);
-    color: white;
-}
-
-.accordion-body.brands_sidebar .nav-link:hover {
-    background: #ff0001;
-    color: #fff;
-    cursor: pointer;
-    padding-left: 20px;
-}
-
-.accordion-body.brands_sidebar .nav-link:hover {
-    background: #ff0001 !important;
-    color: #fff !important;
 }
 
 .brand_product a {

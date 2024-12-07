@@ -226,11 +226,26 @@
     ul.mobile_top_header {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .about_card_image.single_about_card_revarge::after {
         width: 0;
         left: 0;
+    }
+
+    section.brand_view {
+        margin: 0 !important;
+    }
+
+    .copyright .container {
+        display: block;
+    }
+
+    .copyright .container span {
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 
 }
