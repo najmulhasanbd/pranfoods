@@ -202,7 +202,7 @@
 
 
     .media-content span {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .page-banner img {
@@ -246,6 +246,9 @@
         width: 100%;
         display: block;
         text-align: center;
+    }
+    .single_brand_product img {
+        height: 100px;
     }
 
 }

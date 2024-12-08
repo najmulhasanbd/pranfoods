@@ -681,9 +681,9 @@ div#mobilesearchModal .form-group input::placeholder {
 .single_brand_product img {
     width: 100%;
     padding: 10px;
+    object-fit: cover;
     height: 150px;
 }
-
 .product_brand .slick-dots {
     display: flex;
     justify-content: center;
