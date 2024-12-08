@@ -37,8 +37,8 @@
             speed: 300,
             slidesToShow: 6,
             slidesToScroll: 1,
-            centerMode: true, // Enables centering of the active slide
-            centerPadding: '0px', // Adjust the padding around the center slide
+            centerMode: true,
+            centerPadding: '0px',
             draggable: true,
             responsive: [
                 {
@@ -62,7 +62,6 @@
     });
 
     // brand clicle
-
     $('.brand_circle').slick({
         centerMode: true,
         autoplay: true,
@@ -89,23 +88,23 @@
         ]
     });
 
-
-
-
-
-
     // scrollToTop
     $.scrollUp({
-        scrollName: 'scrollUp', // Element ID
-        topDistance: '300', // Distance from top before showing element (px)
-        topSpeed: 300, // Speed back to top (ms)
-        animation: 'fade', // Fade, slide, none
-        animationInSpeed: 200, // Animation in speed (ms)
-        animationOutSpeed: 200, // Animation out speed (ms)
-        scrollText: '<i class="fa-solid fa-arrow-up"></i>', // Text for element
-        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        scrollName: 'scrollUp',
+        topDistance: '300',
+        topSpeed: 300,
+        animation: 'fade',
+        animationInSpeed: 200,
+        animationOutSpeed: 200,
+        scrollText: '<i class="fa-solid fa-arrow-up"></i>',
+        activeOverlay: false,
     });
 
 
+    // preloader
+    window.onload = function () {
+        const preloader = document.getElementById("preloader");
+        preloader.style.display = "none"; // Hide the preloader
+    };
 
 })(jQuery);
