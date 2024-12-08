@@ -48,6 +48,14 @@
                         slidesToScroll: 1,
                         centerMode: true,
                     }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        centerMode: true,
+                    }
                 }
             ]
         });
