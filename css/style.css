@@ -685,6 +685,7 @@ div#mobilesearchModal .form-group input::placeholder {
     object-fit: cover;
     height: 150px;
 }
+
 .product_brand .slick-dots {
     display: flex;
     justify-content: center;
@@ -1213,7 +1214,7 @@ a.single-brouchure:hover img {
     position: relative;
 }
 
-.single_brand_view::after {
+/* .single_brand_view::after {
     position: absolute;
     content: '';
     background: #dddddd87;
@@ -1221,7 +1222,7 @@ a.single-brouchure:hover img {
     top: 0;
     width: 100%;
     height: 100%;
-}
+} */
 
 .brand_circle .slick-slide.slick-current.slick-active.slick-center {
     background: var(--main-color);
@@ -1232,41 +1233,43 @@ a.single-brouchure:hover img {
     background-color: transparent;
 }
 
-       /* Preloader container */
-       #preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #ffffff;
-        /* Background color */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        /* Ensures it's on top of everything */
+/* Preloader container */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    /* Ensures it's on top of everything */
+}
+
+/* Spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    /* Light border */
+    border-top: 5px solid #3498db;
+    /* Blue border */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
     }
 
-    /* Spinner */
-    .spinner {
-        width: 50px;
-        height: 50px;
-        border: 5px solid rgba(0, 0, 0, 0.1);
-        /* Light border */
-        border-top: 5px solid #3498db;
-        /* Blue border */
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
+    to {
+        transform: rotate(360deg);
     }
+}
 
-    /* Spinner animation */
-    @keyframes spin {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
-    }
+/* chatting */
