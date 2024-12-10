@@ -1273,3 +1273,51 @@ a.single-brouchure:hover img {
 }
 
 /* chatting */
+.footer_fix_icon {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+
+.chatSystem {
+    background: var(--main-color);
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.chatting_option {
+    position: absolute;
+    bottom: 50px;
+    background: var(--main-color);
+    border-radius: 5px;
+    width: 150px;
+    display: none;
+    left: 0px;
+    transition: var(--transition);
+}
+
+.chat_icon {
+    line-height: 1;
+}
+
+.chatting_option p a {
+    color: #fff;
+}
+
+.chatting_option p {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.chatting_option p:last-child {
+    border: 0;
+}
+.chat_icon img {
+    border-radius: 100%;
+    width: 30px;
+}

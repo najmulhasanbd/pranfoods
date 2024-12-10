@@ -107,4 +107,19 @@
         preloader.style.display = "none"; // Hide the preloader
     };
 
+
+    // chatting
+    document.addEventListener('DOMContentLoaded', function () {
+        const chatSystem = document.querySelector('.chatSystem');
+        const chattingOption = document.querySelector('.chatting_option');
+
+        chatSystem.addEventListener('click', function () {
+            if (chattingOption.style.display === 'none' || chattingOption.style.display === '') {
+                chattingOption.style.display = 'block';
+            } else {
+                chattingOption.style.display = 'none';
+            }
+        });
+    });
+
 })(jQuery);
