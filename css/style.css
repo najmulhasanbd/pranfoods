@@ -1321,3 +1321,15 @@ a.single-brouchure:hover img {
     border-radius: 100%;
     width: 30px;
 }
+section.header-area.header-sticky.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+section.header-area.header-sticky.sticky .header-top {
+    display: none !important;
+}
+section.header-area.header-sticky.sticky .mobile_top_header {
+    display: none;
+}

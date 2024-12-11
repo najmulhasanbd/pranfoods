@@ -1,6 +1,17 @@
 (function ($) {
     "use strict";
 
+    //header sticky
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 245) {
+            $(".header-sticky").removeClass("sticky");
+        } else {
+            $(".header-sticky").addClass("sticky");
+        }
+    });
+    
+
     //blog event
     $(document).ready(function () {
         $('.event_active').slick({
@@ -121,5 +132,7 @@
             }
         });
     });
+
+
 
 })(jQuery);
