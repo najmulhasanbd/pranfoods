@@ -10,7 +10,6 @@
             $(".header-sticky").addClass("sticky");
         }
     });
-    
 
     //blog event
     $(document).ready(function () {
@@ -111,13 +110,11 @@
         activeOverlay: false,
     });
 
-
     // preloader
     window.onload = function () {
         const preloader = document.getElementById("preloader");
         preloader.style.display = "none"; // Hide the preloader
     };
-
 
     // chatting
     document.addEventListener('DOMContentLoaded', function () {
@@ -132,7 +129,5 @@
             }
         });
     });
-
-
 
 })(jQuery);

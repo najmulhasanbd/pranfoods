@@ -7,16 +7,16 @@
 */
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto Slab", serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-display: swap;
 }
@@ -82,7 +82,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Slab", serif;
     font-weight: normal;
     margin-top: 0px;
     font-style: normal;
@@ -238,8 +238,8 @@ ul.mobile_top_header li span {
     background: var(--main-color);
     height: 35px;
     width: 35px;
-    right: 0;
-    bottom: 54px;
+    right: 54px;
+    bottom: 8px;
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -311,34 +311,31 @@ ul.mobile_top_header li {
 
 .logo {
     background: #fff;
-    border-radius: 10px;
 }
 
 .logo img {
-    width: 150px;
-    border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
-.search_icon {
+/* .search_icon {
     padding: 5px 18px !important;
     background: var(--main-color);
     border-radius: 5px;
     border: 2px solid #fff;
     transition: var(--transition);
-}
+} */
 
 .search_icon i {
     font-size: 15px !important;
 }
 
-.search_icon:hover {
+/* .search_icon:hover {
     background: #fff;
-}
+} */
 
-.search_icon:hover i {
-    color: var(--main-color);
-}
+/* .search_icon:hover i {
+    color: #fff;
+} */
 
 .top_sidebar nav ul li a {
     color: #fff;
@@ -346,23 +343,32 @@ ul.mobile_top_header li {
     display: block;
     font-weight: 500;
     transition: var(--transition);
-    padding: 10px;
+    padding: 21px 10px;
     line-height: 1;
 }
+li.searchModal:hover {
+    background: transparent !important;
+}
 
+li.searchModal i:hover {
+    color: #fff !important;
+}
+
+.top_sidebar nav ul li.searchModal:hover a {
+    color: #fff;
+}
 .top_sidebar nav ul li:hover {
     background: #fff;
     color: var(--main-color);
-    border-radius: 3px;
 }
-
+/* 
 .top_sidebar nav ul li.searchModal:hover {
     background: transparent;
-    color: #fff;
-}
+    color: var(--main-color);
+} */
 
 .top_sidebar nav ul li:hover a {
-    color: #000;
+    color: var(--main-color);
 }
 
 /* .submenu_nav ul li:hover>.child_menu {
@@ -411,7 +417,7 @@ li.mobilesearchModal {
 .top_sidebar {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .header-top ul li,
@@ -419,11 +425,11 @@ li.mobilesearchModal {
     color: #fff;
 }
 
-li.searchModal,
+/* li.searchModal,
 li.mobilesearchModal {
     color: #fff;
     cursor: pointer;
-}
+} */
 
 div#searchModal .form-group,
 div#mobilesearchModal .form-group {
@@ -711,7 +717,7 @@ div#mobilesearchModal .form-group input::placeholder {
     overflow: hidden;
     border-radius: 50%;
     background-color: var(--main-color);
-    width: 5px;
+    width: 10px;
     height: 10px;
     border: 2px solid transparent;
     transition: var(--transition);
@@ -955,6 +961,7 @@ section.information-area a {
     border: 1px solid var(--main-color);
     height: 10px;
     border-radius: 50%;
+    width: 10px;
     transition: var(--transition);
     background: var(--main-color);
 }
@@ -1276,7 +1283,7 @@ a.single-brouchure:hover img {
 .footer_fix_icon {
     position: fixed;
     bottom: 5px;
-    left: 5px;
+    right: 0px;
 }
 
 .chatSystem {
@@ -1295,7 +1302,7 @@ a.single-brouchure:hover img {
     border-radius: 5px;
     width: 150px;
     display: none;
-    left: 0px;
+    right: 0px;
     transition: var(--transition);
 }
 
@@ -1317,10 +1324,12 @@ a.single-brouchure:hover img {
 .chatting_option p:last-child {
     border: 0;
 }
+
 .chat_icon img {
     border-radius: 100%;
-    width: 30px;
+    width: 20px;
 }
+
 section.header-area.header-sticky.sticky {
     position: fixed;
     width: 100%;
@@ -1330,6 +1339,7 @@ section.header-area.header-sticky.sticky {
 section.header-area.header-sticky.sticky .header-top {
     display: none !important;
 }
+
 section.header-area.header-sticky.sticky .mobile_top_header {
     display: none;
 }
